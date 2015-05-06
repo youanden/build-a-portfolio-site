@@ -1,0 +1,91 @@
+body {
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	width: 700px;
+	margin: 0 auto;
+}
+.header {
+	border-bottom: 2px solid #ccc;
+	margin-bottom: 20px;
+}
+.logo {
+	width: 120px;
+	height: 120px;
+}
+.banner { max-width: 100%; }
+.grid {
+	overflow: hidden;
+}
+.repo {
+	float: left;
+	margin-right: 0.5%;
+	text-decoration: none;
+}
+.repo--img {
+	width: 100%;
+	max-width: 100%;
+}
+.featured h1 {
+	background: #fff;
+	float: left;
+	margin: 0;
+	padding-right: 20px;
+}
+.repo--title {
+	color: #000;
+	text-align: center;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+.repo--link,
+.repo--link:visited {
+	display: block;
+	color: #ccc;
+	text-align: center;
+}
+
+/* Helpers */
+.float-left { float: left; }
+.float-right { float: right; }
+.txt-align-right {
+	text-align: right;
+}
+.w33p { width: 33%; }
+.margin-0 { margin: 0; }
+.margin-v-10 { margin: 10px 0; }
+.bg-black { background: #eaeaea; }
+.ovh { overflow: hidden; }
+
+/* Media Queries */
+@media screen and (max-width: 700px) {
+	.wrapper {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 460px) {
+	.basic-info {
+		font-size: 0.8em;
+	}
+}
+@media screen and (max-width: 400px) {
+	.logo {
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+	.basic-info {
+		float: none;
+		text-align: center;
+	}
+	.repo {
+		margin-bottom: 40px;
+	}
+	.repo--title {
+		font-size: 1.5em;
+	}
+	.w33p { width: 100%; }
+}
